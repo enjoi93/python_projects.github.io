@@ -1,0 +1,68 @@
+Valid entries in "validate_pos":
+each item in POSITIONS tuple (validated)
+
+Invalid entries in "validate_pos":
+negative integers, words, incorrect integers and letters.
+
+------
+Valid entries for "validate_ab":
+any integer between the established 'low' and 'high' in the input field
+
+Invalid entries for "validate_ab":
+letters crash program, negative integers will allow the loop to continue
+
+------
+Valid entries for "validate_hits":
+any integer between the established 'low' and 'high' in the input field (the high is "at_bats")
+
+Invalid entries for "validate_hits":
+letters crash program, negative and higher than at_bat integers will allow the loop to continue
+
+------
+Valid entries for "add_player":
+Name will be letters only
+at bats will be ints within acceptable range and NO negatives
+hits will be ints within acceptable range and NOT higher than at bats
+
+Invalid entries for "add_player":
+Name with integers
+at bats with negative integers, letters, or unreasonably high ints
+hits with negative ints, letters, and ints greater than at bats
+
+------
+Valid entries for "move_player":
+integers within range of PLAYERS list
+
+Invalid entries for "move_player":
+negative ints crash program on first input. any integer is accepted on second input. 
+
+------
+Valid entries for "del_player":
+integers within range of first and second input.
+
+Invalid entries for "del_player":
+negative and out of range ints and any letters
+
+------
+Valid entries for "edit_player":
+lineup number must be integers within range of PLAYERS list of lists
+new at bats and hits must follow same protocol as valid/invalid entries for functions "validate_ab and validate_hits"
+
+Invalid entries for "edit_player":
+lineup number will not accept letters and integers out of range.
+new at bats and hits will not accept letters and ints out of respective range
+
+------
+Valid entries for "edit_pos":
+lineup number must be ints within range of PLAYERS list of lists
+position must only accept items within POSITIONS tuple
+
+Invalid entries for "edit_pos":
+lineup number will not accept letters and ints out of range
+position cannot accept ints or any value outside of POSITIONS tuple
+
+Valid entries for "main":
+Any int established in the if/elif statement
+
+Invalid entries for "main":
+Ints not defined in if/elif statement and letters crash program
