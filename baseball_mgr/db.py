@@ -28,6 +28,7 @@ def write_player_data(lineup):
             # row.update({"ab": player.ab})
             # row.update({"hits": player.hits})
             # row.update({"avg": player.avg})
+            row.append(player.fname)
             row.append(player.lname)
             row.append(player.pos)
             row.append(player.ab)
