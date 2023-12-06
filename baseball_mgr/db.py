@@ -1,3 +1,11 @@
+###########
+# MOD LOG
+###########
+# 12/2
+# This file is not being used for recent chapter requirements
+# added "type: ignore" to read_player_data()
+# Lineup class unknown because it is commented out in objects.py
+
 import csv
 from objects import Lineup, Player
 
@@ -55,7 +63,7 @@ def read_player_data():
     try: 
         with open(FILENAME, newline="") as file:
             for row in csv.reader(file):
-                player = Player(row[0], row[1], row[2], int(row[3]), int(row[4]), float(row[5]))
+                player = Player(row[0], row[1], row[2], int(row[3]), int(row[4]), float(row[5])) # type: ignore
                 lineup.addPlayer(player)
             return lineup        
     except FileNotFoundError:
